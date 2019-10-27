@@ -1,4 +1,4 @@
-<div style="direction: rtl" dir="rtl">
+<div  dir="rtl">
 
 ## Daat_Ofra_Web
 
