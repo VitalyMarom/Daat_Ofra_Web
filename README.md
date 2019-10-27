@@ -9,6 +9,8 @@
 ### קישור לאתר שמרכז ידע בשפה
 * [W3Schools](https://www.w3schools.com/html/default.asp)
 
+---
+
 ### מה שלמדנו עד כה:
 ```html
 <h6></h6>
