@@ -1,3 +1,5 @@
+<div style="direction: rtl" dir="rtl">
+
 ## Daat_Ofra_Web
 
 ### הורדה של תוכנה לעריכה
@@ -32,3 +34,4 @@
   
 ```
 
+</div>
