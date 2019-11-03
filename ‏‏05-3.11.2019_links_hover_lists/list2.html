@@ -6,20 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <style>
+        body {
+            direction: rtl;
+            background-color: black;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            float: right;
+            padding: 10px;
+            background-color: azure;
+        }
+        
+        li:hover {
+            background-color: blueviolet;
+        }
+        
+        a {
+            color: chartreuse;
+        }
+        
+        a:hover {
+            color: aqua;
+        }
+    </style>
 </head>
 
 <body>
-    <ol>
-        <li>
-            ערך ראשון
-        </li>
-        <li>
-            ערך שני
-        </li>
-        <li>
-            ערך שלישי
-        </li>
-    </ol>
+    <ul>
+        <a href="#">
+            <li>
+                ערך ראשון
+            </li>
+        </a>
+        <a href="https://www.google.com">
+            <li>
+                ערך שני
+            </li>
+        </a>
+        <a href="#">
+            <li>
+                ערך שלישי
+            </li>
+        </a>
+    </ul>
 </body>
 
 </html>
