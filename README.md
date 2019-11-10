@@ -8,7 +8,7 @@
 
 ### הורדה של התוכנה VSCode
 
-* [התוכנה שאנו משתמשים בה בכיתה - להוריד ולהתקין](https://aka.ms/win32-x64-user-stable)
+* [VSCode](https://aka.ms/win32-x64-user-stable)
 
 ### קישור לאתר שמרכז ידע בשפה
 * [W3Schools](https://www.w3schools.com/html/default.asp)
