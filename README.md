@@ -6,6 +6,10 @@
 
 * [התוכנה שאנו משתמשים בה בכיתה - להוריד ולהתקין](https://download.sublimetext.com/Sublime%20Text%20Build%203211%20x64%20Setup.exe)
 
+### הורדה של התוכנה VSCode
+
+* [VSCode](https://aka.ms/win32-x64-user-stable)
+
 ### קישור לאתר שמרכז ידע בשפה
 * [W3Schools](https://www.w3schools.com/html/default.asp)
 
