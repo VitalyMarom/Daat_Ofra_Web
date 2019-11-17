@@ -10,6 +10,11 @@
 
 * [VSCode](https://aka.ms/win32-x64-user-stable)
 
+### VSCode למחשבי HP
+
+* [VSCode - x32](https://aka.ms/win32-user-stable)
+
+
 ### קישור לאתר שמרכז ידע בשפה
 * [W3Schools](https://www.w3schools.com/html/default.asp)
 
