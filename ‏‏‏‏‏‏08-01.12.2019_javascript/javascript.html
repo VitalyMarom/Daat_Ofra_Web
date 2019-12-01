@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Learn js</title>
+    <style>
+        body {
+            direction: rtl;
+            padding: 0 25% 0 25%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="head">כותרת ראשית</h1>
+
+    <p id="demo">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex voluptate numquam illum ut ab itaque fugiat labore cupiditate. Totam voluptatum iusto soluta, deserunt debitis incidunt iure. Asperiores ex sequi quas.
+    </p>
+
+    <input type="text" id="name" readonly> </br>
+    </br>
+    <button onclick="vitaly()">לחץ עלי</button>
+
+    <script>
+        function vitaly() {
+            var txt = document.getElementById(`name`);
+            //var h = document.getElementById(`head`);
+            txt.value += ` hello`;
+            //h.style.color = `#00ff00`;
+        }
+    </script>
+
+</body>
+
+</html>
