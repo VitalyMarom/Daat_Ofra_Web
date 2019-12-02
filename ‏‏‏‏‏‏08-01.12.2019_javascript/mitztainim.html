@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Javascript</title>
+    <style>
+        body {
+            direction: rtl;
+            padding: 30px 25% 0 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">
+        כותרת ראשית
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum molestiae maiores exercitationem et quia ad a harum, doloribus ipsa? Esse numquam cum ducimus quos. Rem aliquam voluptatibus placeat ipsa sit!
+    </p>
+
+    <input type="text">
+    </br>
+    </br>
+    <button onclick="vitaly()">לחץ עלי</button>
+
+    <script>
+        function vitaly() {
+
+            var txt = document.getElementById(`heading`);
+            txt.style.color = `#00ffbb`;
+            txt.innerHTML = "כותרת של ג'אווה סקריפט"
+        }
+    </script>
+</body>
+
+</html>

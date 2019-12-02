@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javascript</title>
+    <style>
+        body {
+            direction: rtl;
+            padding: 30px 25% 0 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">
+        כותרת ראשית
+    </h1>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium expedita velit atque, laborum cum architecto reiciendis placeat id modi praesentium illum beatae natus aperiam, asperiores enim dolores numquam obcaecati fuga.
+    </p>
+    <!--זה מה שצריך להוסיף-->
+    <input type="text">
+    </br>
+    </br>
+    <button onclick="vitaly()">
+        לחץ עלי
+    </button>
+
+    <script>
+        function vitaly() {
+            var txt = document.getElementById(`heading`);
+            txt.innerHTML = `אני טקסט מהפונקציה`;
+            txt.style.color = `#00ffaa`;
+        }
+    </script>
+</body>
+
+</html>
