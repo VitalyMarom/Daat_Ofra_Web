@@ -24,26 +24,49 @@
         טריויה לחנוכה
     </h1>
 
-    <div id="q">
+    <div id="q1">
         <h3>
             שאלה מספר 1 נכנסת לפה
         </h3>
 
-        <input type="checkbox" id="q1"> תשובה ראשונה</br>
-        <input type="checkbox" id="q2"> תשובה שנייה</br>
-        <input type="checkbox" name="q3"> תשובה שלישית</br>
-        <input type="checkbox" name="q4d"> תשובה רביעית</br>
+        <input type="checkbox" id="a1"> תשובה ראשונה</br>
+        <input type="checkbox" id="a2"> תשובה שנייה</br>
+        <input type="checkbox" id="a3"> תשובה שלישית</br>
+        <input type="checkbox" id="a4"> תשובה רביעית</br>
         </br>
-        <button onclick="check1()">בדוק תשובה</button>
+        <button onclick="checkq1()">בדוק תשובה</button>
+    </div>
+
+    <div id="q2">
+        <h3>
+            שאלה מספר 1 נכנסת לפה
+        </h3>
+
+        <input type="checkbox" id="aa1"> תשובה ראשונה</br>
+        <input type="checkbox" id="aa2"> תשובה שנייה</br>
+        <input type="checkbox" id="aa3"> תשובה שלישית</br>
+        <input type="checkbox" id="aa4"> תשובה רביעית</br>
+        </br>
+        <button onclick="checkq1()">בדוק תשובה</button>
     </div>
 
     <script>
-        function check1() {
-            var a = document.getElementById(`q2`);
+        function checkq1() {
+            var a = document.getElementById(`a2`);
             if (a.checked) {
-                document.getElementById(`q`).style.backgroundColor = `green`;
+                document.getElementById(`q1`).style.backgroundColor = `green`;
             } else {
-                document.getElementById(`q`).style.backgroundColor = `red`;
+                document.getElementById(`q1`).style.backgroundColor = `red`;
+            }
+
+        }
+
+        function checkq2() {
+            var a = document.getElementById(`aa2`);
+            if (a.checked) {
+                document.getElementById(`q2`).style.backgroundColor = `green`;
+            } else {
+                document.getElementById(`q2`).style.backgroundColor = `red`;
             }
 
         }
