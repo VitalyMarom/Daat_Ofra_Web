@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>טריוויה לחנוכה</title>
+    <style>
+        body {
+            padding: 20px 25% 0 25%;
+            direction: rtl;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #q {}
+    </style>
+
+</head>
+
+<body>
+    <h1>
+        טריויה לחנוכה
+    </h1>
+
+    <div id="q1">
+
+        <h3>
+            שאלה מספר 1 נכנסת לפה
+        </h3>
+
+        <input type="radio" name="q1" value="a1"> תשובה ראשונה</br>
+        <input type="radio" name="q1" value="a2"> תשובה שנייה</br>
+        <input type="radio" name="q1" value="a3"> תשובה שלישית</br>
+        <input type="radio" name="q1" value="a4"> תשובה רביעית</br>
+        </br>
+        <button onclick="checkq1()">בדוק תשובה</button>
+        </br>
+        <img id="q1_img" style="visibility: hidden;" src="https://sep.yimg.com/ay/yhst-94387763560218/you-were-right-card-112.jpg" width="150" height="150" />
+
+    </div>
+
+    <div id="q2">
+        <h3>
+            שאלה מספר 1 נכנסת לפה
+        </h3>
+
+        <input type="radio" id="aa1"> תשובה ראשונה</br>
+        <input type="radio" id="aa2"> תשובה שנייה</br>
+        <input type="radio" id="aa3"> תשובה שלישית</br>
+        <input type="radio" id="aa4"> תשובה רביעית</br>
+        </br>
+        <button onclick="checkq2()">בדוק תשובה</button>
+    </div>
+
+    <script>
+        function checkq1() {
+            var x = document.getElementsByName(`q1`);
+            var i;
+            for (i = 0; i < x.length; i++) {
+                if (x[2].checked == true) {
+                    document.getElementById(`q1`).style.backgroundColor = `green`;
+                    document.getElementById(`q1_img`).style.visibility = `visible`;
+                } else {
+                    document.getElementById(`q1`).style.backgroundColor = `red`;
+                    document.getElementById(`q1_img`).style.visibility = `hidden`;
+                }
+            }
+        }
+
+        function checkq2() {
+            var a = document.getElementById(`aa2`);
+            if (a.checked) {
+                document.getElementById(`q2`).style.backgroundColor = `green`;
+            } else {
+                document.getElementById(`q2`).style.backgroundColor = `red`;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
