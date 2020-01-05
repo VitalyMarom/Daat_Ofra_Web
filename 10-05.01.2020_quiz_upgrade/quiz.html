@@ -41,42 +41,18 @@
 
     </div>
 
-    <div id="q2">
-        <h3>
-            שאלה מספר 1 נכנסת לפה
-        </h3>
-
-        <input type="radio" id="aa1"> תשובה ראשונה</br>
-        <input type="radio" id="aa2"> תשובה שנייה</br>
-        <input type="radio" id="aa3"> תשובה שלישית</br>
-        <input type="radio" id="aa4"> תשובה רביעית</br>
-        </br>
-        <button onclick="checkq2()">בדוק תשובה</button>
-    </div>
-
     <script>
         function checkq1() {
+
             var x = document.getElementsByName(`q1`);
-            var i;
-            for (i = 0; i < x.length; i++) {
-                if (x[2].checked == true) {
-                    document.getElementById(`q1`).style.backgroundColor = `green`;
-                    document.getElementById(`q1_img`).style.visibility = `visible`;
-                } else {
-                    document.getElementById(`q1`).style.backgroundColor = `red`;
-                    document.getElementById(`q1_img`).style.visibility = `hidden`;
-                }
-            }
-        }
 
-        function checkq2() {
-            var a = document.getElementById(`aa2`);
-            if (a.checked) {
-                document.getElementById(`q2`).style.backgroundColor = `green`;
+            if (x[2].checked == true) {
+                document.getElementById(`q1`).style.backgroundColor = `green`;
+                document.getElementById(`q1_img`).style.visibility = `visible`;
             } else {
-                document.getElementById(`q2`).style.backgroundColor = `red`;
+                document.getElementById(`q1`).style.backgroundColor = `red`;
+                document.getElementById(`q1_img`).style.visibility = `hidden`;
             }
-
         }
     </script>
 </body>
