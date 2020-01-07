@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>טריוויה לחנוכה</title>
+    <title>טריוויה של דעת</title>
     <style>
         body {
             padding: 20px 25% 0 25%;
@@ -21,7 +21,7 @@
 
 <body>
     <h1>
-        טריויה לחנוכה
+        טריוויה של דעת
     </h1>
 
     <div id="q1">
@@ -37,21 +37,78 @@
         </br>
         <button onclick="checkq1()">בדוק תשובה</button>
         </br>
-        <img id="q1_img" style="visibility: hidden;" src="https://sep.yimg.com/ay/yhst-94387763560218/you-were-right-card-112.jpg" width="150" height="150" />
+        <img id="q1_img" style="visibility: hidden;" src="https://steamuserimages-a.akamaihd.net/ugc/848216026322270926/24268F7BEC67BD392B4D4045A6C5161B712FC5C0/" width="150" height="150" />
+    </div>
 
+    <div id="q2">
+
+        <h3>
+            שאלה מספר 2 נכנסת לפה
+        </h3>
+
+        <input type="radio" name="q2" value="a1"> תשובה ראשונה</br>
+        <input type="radio" name="q2" value="a2"> תשובה שנייה</br>
+        <input type="radio" name="q2" value="a3"> תשובה שלישית</br>
+        <input type="radio" name="q2" value="a4"> תשובה רביעית</br>
+        </br>
+        <button onclick="checkq2()">בדוק תשובה</button>
+        </br>
+        <img id="q2_img" style="visibility: hidden;" src="https://sep.yimg.com/ay/yhst-94387763560218/you-were-right-card-112.jpg" width="150" height="150" />
+    </div>
+
+    <div id="q3">
+
+        <h3>
+            שאלה מספר 3 נכנסת לפה
+        </h3>
+
+        <input type="radio" name="q3" value="a1"> תשובה ראשונה</br>
+        <input type="radio" name="q3" value="a2"> תשובה שנייה</br>
+        <input type="radio" name="q3" value="a3"> תשובה שלישית</br>
+        <input type="radio" name="q3" value="a4"> תשובה רביעית</br>
+        </br>
+        <button onclick="checkq3()">בדוק תשובה</button>
+        </br>
+        <img id="q3_img" style="visibility: hidden;" src="https://sep.yimg.com/ay/yhst-94387763560218/you-were-right-card-112.jpg" width="150" height="150" />
     </div>
 
     <script>
         function checkq1() {
 
-            var x = document.getElementsByName(`q1`);
+            var answers = document.getElementsByName(`q1`);
 
-            if (x[2].checked == true) {
+            if (answers[2].checked == true) {
                 document.getElementById(`q1`).style.backgroundColor = `green`;
                 document.getElementById(`q1_img`).style.visibility = `visible`;
             } else {
                 document.getElementById(`q1`).style.backgroundColor = `red`;
                 document.getElementById(`q1_img`).style.visibility = `hidden`;
+            }
+        }
+
+        function checkq2() {
+
+            var answers = document.getElementsByName(`q2`);
+
+            if (answers[2].checked == true) {
+                document.getElementById(`q2`).style.backgroundColor = `green`;
+                document.getElementById(`q2_img`).style.visibility = `visible`;
+            } else {
+                document.getElementById(`q2`).style.backgroundColor = `red`;
+                document.getElementById(`q2_img`).style.visibility = `hidden`;
+            }
+        }
+
+        function checkq3() {
+
+            var answers = document.getElementsByName(`q3`);
+
+            if (answers[0].checked == true) {
+                document.getElementById(`q3`).style.backgroundColor = `green`;
+                document.getElementById(`q3_img`).style.visibility = `visible`;
+            } else {
+                document.getElementById(`q3`).style.backgroundColor = `red`;
+                document.getElementById(`q3_img`).style.visibility = `hidden`;
             }
         }
     </script>
