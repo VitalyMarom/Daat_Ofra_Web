@@ -36,8 +36,12 @@
         <input type="radio" name="q1" value="a4"> תשובה רביעית</br>
         </br>
         <button onclick="checkq1()">בדוק תשובה</button>
+        <button onclick="clue1()">רמז</button>
+        <p id="clue1">
+
+        </p>
         </br>
-        <img id="q1_img" style="visibility: hidden;" src="https://steamuserimages-a.akamaihd.net/ugc/848216026322270926/24268F7BEC67BD392B4D4045A6C5161B712FC5C0/" width="150" height="150" />
+        <img id="q1_img" />
     </div>
 
     <div id="q2">
@@ -79,11 +83,19 @@
 
             if (answers[2].checked == true) {
                 document.getElementById(`q1`).style.backgroundColor = `green`;
-                document.getElementById(`q1_img`).style.visibility = `visible`;
+                document.getElementById(`q1_img`).src = "https://steamuserimages-a.akamaihd.net/ugc/848216026322270926/24268F7BEC67BD392B4D4045A6C5161B712FC5C0/";
+                document.getElementById(`q1_img`).width = `150`;
+                document.getElementById(`q1_img`).height = `150`;
             } else {
                 document.getElementById(`q1`).style.backgroundColor = `red`;
-                document.getElementById(`q1_img`).style.visibility = `hidden`;
+                document.getElementById(`q1_img`).src = "http://asbarez.com/wp-content/uploads/2019/09/GG-Transportation-Service.jpg";
+                document.getElementById(`q1_img`).width = `150`;
+                document.getElementById(`q1_img`).height = `150`;
             }
+        }
+
+        function clue1() {
+            document.getElementById(`clue1`).innerHTML = `תסתכל למעלה ואז ימינה`;
         }
 
         function checkq2() {
